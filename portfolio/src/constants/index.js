@@ -58,11 +58,10 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-      subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      title: 'Uber Clone',
+      desc: 'An Uber clone ride-hailing application replicating the core features of Uber. It includes a Rider App for booking rides, viewing ride history, real-time tracking, payments, and driver ratings. The Driver App allows accepting/rejecting requests, route navigation, earnings tracking, and profile management.',
+      subdesc: 'Built with React.js, Tailwind CSS, JavaScript, Node.js, Express.js, and GSAP animation.',
+      href: 'https://github.com/shreesriv12/Uber-Clone-',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
@@ -72,34 +71,17 @@ export const navLinks = [
       },
       spotlight: '/assets/spotlight1.png',
       tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        { id: 1, name: 'React.js', path: '/assets/react.svg' },
+        { id: 2, name: 'TailwindCSS', path: '/assets/tailwindcss.png' },
+        { id: 3, name: 'JavaScript', path: '/assets/javascript.png' },
+        { id: 4, name: 'Express.js', path: '/assets/express.png' },
       ],
     },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-      subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+      title: 'Devjam project - Assignify',
+      desc: 'Assignify is a platform designed for students to efficiently manage their assignments, deadlines, and communication.',
+      subdesc: 'Created using the MERN stack, it integrates task tracking, file uploads, and messaging to simplify academic workflows and boost productivity.',
+      href: 'https://github.com/shreesriv12/DevJam',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -109,111 +91,42 @@ export const navLinks = [
       },
       spotlight: '/assets/spotlight2.png',
       tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        { id: 1, name: 'React.js', path: '/assets/react.svg' },
+        { id: 2, name: 'TailwindCSS', path: '/assets/tailwindcss.png' },
+        { id: 3, name: 'JavaScript', path: '/assets/javascript.png' },
+        { id: 4, name: 'Express.js', path: '/assets/express.png' },
+        { id: 5, name: 'MongoDB', path: '/assets/mongodb.png' },
       ],
     },
     {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-      subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+      title: 'Mediconnect (Ongoing)',
+      desc: 'MediConnect is a healthcare platform that connects doctors and clients for appointment scheduling, real-time consultations, and access to medical resources. It includes features like form integration and SMS notifications.',
+      subdesc: 'Built using React.js, Twilio, Nodemailer, and Express.js, it enhances operational workflows.',
+      href: 'https://github.com/shreesriv12/MediConnect',
       texture: '/textures/project/project3.mp4',
       logo: '/assets/project-logo3.png',
       logoStyle: {
         backgroundColor: '#60f5a1',
-        background:
-          'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+        background: 'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
         border: '0.2px solid rgba(208, 213, 221, 1)',
         boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
       },
       spotlight: '/assets/spotlight3.png',
       tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        { id: 1, name: 'React.js', path: '/assets/react.svg' },
+        { id: 2, name: 'TailwindCSS', path: '/assets/tailwindcss.png' },
+        { id: 3, name: 'TypeScript', path: '/assets/typescript.png' },
+        { id: 4, name: 'Framer Motion', path: '/assets/framer.png' },
+        { id: 5, name: 'Express.js', path: '/assets/express.png' },
+        { id: 6, name: 'MongoDB', path: '/assets/mongodb.png' },
       ],
     },
     {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-      subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+      title: 'Webster project - Diddys Party',
+      desc: 'Diddys Party is a platform for music creators to manage their creative process, from lyric drafts to project concepts. It helps in sketching albums, planning singles, and organizing collaborations.',
+      subdesc: 'Built with HTML, CSS, and JavaScript, it was my first-ever project.',
+      href: 'https://github.com/shreesriv12/Team-WebWizards-Team-Id-691',
       texture: '/textures/project/project4.mp4',
-      logo: '/assets/project-logo4.png',
-      logoStyle: {
-        backgroundColor: '#0E1F38',
-        border: '0.2px solid #0E2D58',
-        boxShadow: '0px 0px 60px 0px #2F67B64D',
-      },
-      spotlight: '/assets/spotlight4.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
-    {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-      subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '/textures/project/project5.mp4',
       logo: '/assets/project-logo5.png',
       logoStyle: {
         backgroundColor: '#1C1A43',
@@ -222,26 +135,9 @@ export const navLinks = [
       },
       spotlight: '/assets/spotlight5.png',
       tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        { id: 1, name: 'HTML', path: '/assets/html.png' },
+        { id: 2, name: 'CSS', path: '/assets/css.png' },
+        { id: 3, name: 'JavaScript', path: '/assets/javascript.png' },
       ],
     },
   ];
