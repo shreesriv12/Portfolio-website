@@ -21,38 +21,27 @@ export const navLinks = [
     },
   ];
   
-  export const clientReviews = [
+  export const achievementslist = [
     {
       id: 1,
-      name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
-      img: 'assets/review1.png',
-      review:
-        'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      name: 'Softhathlon',
+      position: '2nd position in first year',
+      review:'An Event Aimed At Simulating The Software profile-based Recruitment Procedure For undergraduates. It Consists Of A Series Of written And Coding Rounds Testing Thetechnical Prowess Of The Candidate.interview Rounds Also Form An Integral Part Of The Event In Which The Students Are judged On The Knowledge And Confidence They Exude.',
+
     },
     {
       id: 2,
-      name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
-      img: 'assets/review2.png',
+      name: 'Techmaiden',
+      position: '1st rank in first year',
       review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+        'This Exclusive Event Aims Atproviding Ardent Females Like You With Overall Development as a Techie. The Event Consists of a Coding+technical Round Followed by Interviews.',
     },
     {
       id: 3,
-      name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
-      img: 'assets/review3.png',
+      name: 'Devjam',
+      position: 'One of the top 8 teams', 
       review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    },
-    {
-      id: 4,
-      name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
-      img: 'assets/review4.png',
-      review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+        'A week-long development event for freshers to dive into the vast,exciting world of tech.',
     },
   ];
   
