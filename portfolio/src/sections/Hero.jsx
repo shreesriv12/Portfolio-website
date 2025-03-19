@@ -5,6 +5,11 @@ import { PerspectiveCamera, OrbitControls, Environment } from '@react-three/drei
 import { HackerRoom } from '../component/HackerRoom';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants';
+import Target from '../component/Target';
+import ReactLogo from '../component/ReactLogo';
+import Cube from '../component/Cube';
+import Rings from '../component/Rings';
+import HeroCamera from '../component/HeroCamera';
 const Hero = () => {
     const isMobile = useMediaQuery({ maxWidth: 768 });
     const isSmall=useMediaQuery({maxWidth:440});
@@ -19,7 +24,7 @@ const Hero = () => {
         </p>
         <p className='text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal 
           bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent'>
-          ASPIRING WEB AND CP ENTHUSIAST
+          ASPIRING WEB ENTHUSIAST
         </p>
       </div>
 
@@ -31,22 +36,24 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 1, 10]} />
              {/* Model */}
+             <HeroCamera>
              <HackerRoom
               position={sizes.deskPosition} 
               scale={sizes.deskScale}
                rotation={[0,-Math.PI,0]}
                 />
+                </HeroCamera>
           <group>
             <Target position={sizes.targetPosition}/>
-          </group>
+            <ReactLogo position={sizes.reactLogoPosition}/>
+            <Cube position={sizes.cubePosition} />
+            <Rings position={sizes.ringPosition} />
+            </group>
             {/* Lighting */}
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5}  />
             
-           
-            {/* Controls & Environment */}
-            <OrbitControls enableZoom={true} />
-            <Environment preset="sunset" />
+    
           </Suspense>
         </Canvas>
       </div>
