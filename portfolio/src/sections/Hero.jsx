@@ -8,7 +8,7 @@ import { calculateSizes } from '../constants';
 import Target from '../component/Target';
 import ReactLogo from '../component/ReactLogo';
 import Cube from '../component/Cube';
-import Rings from '../component/RIngs';
+import Rings from '../component/Rings';
 import HeroCamera from '../component/HeroCamera';
 import Button from '../component/Button';
 const Hero = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
 
     const sizes=calculateSizes(isSmall,isMobile,isTablet);
   return (
-    <section className='min-h-screen w-full flex flex-col relative' id="home">
+    <section className='min-h-screen w-full flex flex-col relative' id="home">  
       <div className='w-full mx-auto flex flex-col sm:mt-36 mt-20 sm:px-10 px-5 gap-3'>
         <p className='sm:text-3xl text-xl font-medium text-white text-center font-generalsans'>
           Hi, I am Shreeya Srivastava <span className='waving-hand'>✌️</span>
@@ -27,6 +27,7 @@ const Hero = () => {
           bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent'>
           ASPIRING WEB ENTHUSIAST
         </p>
+        
       </div>
 
       <div className='w-full h-screen absolute inset-0'>
