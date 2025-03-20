@@ -1,10 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Globe from 'react-globe.gl';
+import React, { useRef, useState } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 import Button from '../component/Button';
+
+const Earth = () => {
+  const { scene } = useGLTF('/models/earth.glb'); // Make sure the path is correct
+  return <primitive object={scene} scale={1.5} />;
+};
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
-  const globeRef = useRef(null);
 
   const handleCopy = () => {
     navigator.clipboard.writeText('shreeyasrivastava1124@gmail.com');
@@ -14,18 +19,6 @@ const About = () => {
       setHasCopied(false);
     }, 2000);
   };
-
-  // Auto-rotation and focus effect for the globe
-  useEffect(() => {
-    if (globeRef.current) {
-      const globe = globeRef.current;
-      globe.controls().autoRotate = true;
-      globe.controls().autoRotateSpeed = 0.5; // Adjust rotation speed
-
-      // Focus on Lucknow
-      globe.pointOfView({ lat: 26.8467, lng: 80.9462, altitude: 2 }, 1000);
-    }
-  }, []);
 
   return (
     <section className="sm:px-10 px-5 my-20" id="about">
@@ -57,25 +50,16 @@ const About = () => {
           </div>
         </div>
 
-        {/* Globe Grid */}
+        {/* Earth Grid */}
         <div className="col-span-1 xl:row-span-4">
           <div className="w-full h-full border border-black-300 bg-gray-800 rounded-lg sm:p-7 p-4 flex flex-col gap-5">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                ref={globeRef}  // Attach ref here
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="https://unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
-                
-                labelsData={[
-                  { lat: 26.8467, lng: 80.9462, text: 'Lucknow, India', color: 'white', size: 10 },
-                ]}
-              />
+            <div className="rounded-3xl w-full sm:h-[326px] h-[326px] flex justify-center items-center">
+              <Canvas>
+                <OrbitControls autoRotate autoRotateSpeed={0.5} />
+                <ambientLight intensity={0.8} />
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+                <Earth />
+              </Canvas>
             </div>
             <div>
               <p className="text-xl font-semibold mb-2 text-white font-generalsans">I’m very flexible with time zone communications & locations</p>
