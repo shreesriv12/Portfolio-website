@@ -8,7 +8,7 @@ import { calculateSizes } from '../constants';
 import Target from '../component/Target';
 import ReactLogo from '../component/ReactLogo';
 import Cube from '../component/Cube';
-import Rings from '../component/Rings';
+import Rings from '../component/RIngs';
 import HeroCamera from '../component/HeroCamera';
 import Button from '../component/Button';
 const Hero = () => {
