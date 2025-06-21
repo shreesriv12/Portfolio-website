@@ -219,6 +219,7 @@ const Hero = () => {
         <p className="text-center text-gray-400 sm:text-lg text-base max-w-2xl mx-auto leading-relaxed">
           Crafting digital experiences with modern technologies and creative design
         </p>
+        
       </div>
 
       {/* 3D Canvas */}

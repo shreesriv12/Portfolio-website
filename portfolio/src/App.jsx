@@ -18,6 +18,7 @@ const App = () => {
     <Achievements/>
     
     <Contact/>
+    <Footer/>x
     </main>
   )
 }
