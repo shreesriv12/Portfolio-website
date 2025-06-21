@@ -6,14 +6,6 @@ import Globe from 'react-globe.gl'; // Assuming you have a Globe component avail
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('shreeyasrivastava1124@gmail.com');
-    setHasCopied(true);
-
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
-  };
 
     const handleCopy = () => {
       navigator.clipboard.writeText('shreeyasrivastava1124@gmail.com');

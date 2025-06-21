@@ -6,7 +6,7 @@ import Projects from './sections/Projects'
 import Achievements from './sections/Achievements'
 import Contact from './sections/Contact'
 import CodingProfilesDashboard from './sections/Coding'
-
+import Footer from './sections/Footer'
 const App = () => {
   return (
     <main className='max-w-7xl mx-auto'>
@@ -18,7 +18,7 @@ const App = () => {
     <Achievements/>
     
     <Contact/>
-    <Footer/>x
+    <Footer/>
     </main>
   )
 }
