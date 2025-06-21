@@ -19,6 +19,16 @@ export const navLinks = [
       name: 'Contact',
       href: '#contact',
     },
+    {
+      id: 5,
+      name: 'Resume',
+      href: 'https://drive.google.com/file/d/1okMhpKw2oWbUfBuVHbj-l-co-Mxm2JsB/view?usp=sharing',
+    },
+    {
+      id: 6,
+      name: 'Coding Stats',
+      href: '#coding',
+    }
   ];
   
   export const achievementslist = [
@@ -88,7 +98,7 @@ export const navLinks = [
       ],
     },
     {
-      title: 'Mediconnect (Ongoing)',
+      title: 'Mediconnect',
       desc: 'MediConnect is a healthcare platform that connects doctors and clients for appointment scheduling, real-time consultations, and access to medical resources. It includes features like form integration and SMS notifications.',
       subdesc: 'Built using React.js, Twilio, Nodemailer, and Express.js, it enhances operational workflows.',
       href: 'https://github.com/shreesriv12/MediConnect',
@@ -111,6 +121,29 @@ export const navLinks = [
       ],
     },
     {
+  title: 'CryptoCred',
+  desc: 'CryptoCred is a Blockchain-Based Academic Certificate Storage and Verification Platform that eliminates fake degrees and ensures secure, tamper-proof credentials using IPFS and blockchain.',
+  subdesc: 'Built by team "npm -D coders" at Hack36 using Next.js, Solidity, Polygon, IPFS, Express.js, and MongoDB for decentralized certificate verification.',
+  href: 'https://github.com/shreesriv12/CryptoCred', // ← change this to actual repo URL if different
+  texture: '/textures/project/project5.mp4',       // ← replace with actual video texture path
+  logo: '/assets/crypto.jpg',       // ← replace with actual logo image
+  logoStyle: {
+    backgroundColor: '#9b59b6',
+    background: 'linear-gradient(0deg, #9B59B650, #9B59B650), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+    border: '0.2px solid rgba(208, 213, 221, 1)',
+    boxShadow: '0px 0px 60px 0px rgba(155, 89, 182, 0.4)'
+  },
+  spotlight: '/assets/spotlight-cryptocred.png',      // ← optional preview image
+  tags: [
+    { id: 1, name: 'Next.js', path: '/assets/next.svg' },
+    { id: 2, name: 'TailwindCSS', path: '/assets/tailwindcss.png' },
+    { id: 3, name: 'Solidity', path: '/assets/solidity.svg' },
+    { id: 4, name: 'Blockchain', path: '/assets/blockchain.svg' },
+    { id: 5, name: 'Express.js', path: '/assets/express.png' },
+    { id: 6, name: 'MongoDB', path: '/assets/mongodb.png' },
+  ]
+},
+    {
       title: 'Webster project - Diddys Party',
       desc: 'Diddys Party is a platform for music creators to manage their creative process, from lyric drafts to project concepts. It helps in sketching albums, planning singles, and organizing collaborations.',
       subdesc: 'Built with HTML, CSS, and JavaScript, it was my first-ever project.',
@@ -129,6 +162,47 @@ export const navLinks = [
         { id: 3, name: 'JavaScript', path: '/assets/javascript.png' },
       ],
     },
+    {
+  title: 'YouTube AI Transcript Assistant',
+  desc: 'A Chrome Extension + AI Backend that allows users to ask questions about any YouTube video by fetching, chunking, embedding transcripts, and generating AI-powered answers using Gemini.',
+  subdesc: 'Built using Chrome Extension (HTML, JS, CSS), FastAPI, yt-dlp, sentence-transformers, FAISS, and Gemini via LangChain for context-aware transcript Q&A.',
+  href: 'https://github.com/shreesriv12/Youtube-ChatBot-using-Langchain', // replace if different
+  texture: '/textures/project/project6.mp4', // update with your actual path
+  logo: '/assets/project-logo-ytai.png', // add your logo file here
+  logoStyle: {
+    backgroundColor: '#ff6b6b',
+    background: 'linear-gradient(0deg, #FF6B6B50, #FF6B6B50), linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(208,213,221,0.8) 100%)',
+    border: '0.2px solid rgba(208, 213, 221, 1)',
+    boxShadow: '0px 0px 60px 0px rgba(255, 107, 107, 0.3)'
+  },
+  spotlight: '/assets/spotlight-ytai.png', // optional demo thumbnail
+  tags: [
+    { id: 1, name: 'Chrome Extension', path: 'https://img.icons8.com/?size=100&id=63785&format=png&color=000000' },
+    { id: 2, name: 'FastAPI', path: 'https://img.icons8.com/?size=100&id=21888&format=png&color=000000' },
+    { id: 3, name: 'Python', path: 'https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000' },
+    { id: 6, name: 'Gemini', path: 'https://img.icons8.com/?size=100&id=MTnnE7FNiELB&format=png&color=000000' },
+  ]
+},
+{
+  title: 'Recommendation Systems',
+  desc: 'Explore implementations of Content-Based, Collaborative, and Hybrid Recommendation Systems applied to real-world scenarios like movie suggestions.',
+  subdesc: 'Built with Streamlit, Scikit-Learn, NLTK, and Python, this project provides personalized movie recommendations using NLP and similarity models.',
+  href: 'https://github.com/shree_sriv12/movie-recommender-system',
+  texture: '/textures/project/project7.mp4', // Replace with actual video or GIF path
+  logo: '/assets/project-logo-recsys.png',   // Add your project logo asset
+  logoStyle: {
+    backgroundColor: '#ffa534',
+    background: 'linear-gradient(0deg, #FFA53450, #FFA53450), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+    border: '0.2px solid rgba(208, 213, 221, 1)',
+    boxShadow: '0px 0px 60px 0px rgba(255, 165, 52, 0.3)'
+  },
+  spotlight: '/assets/spotlight-recsys.png', // Optional image of app preview
+  tags: [
+    { id: 1, name: 'Python', path: 'https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000' },
+    { id: 2, name: 'Streamlit', path: 'https://img.icons8.com/?size=100&id=Rffi8qeb2fK5&format=png&color=000000' },
+    { id: 3, name: 'NLP', path: '/https://img.icons8.com/?size=100&id=aHClp8f4SBQL&format=png&color=000000' },
+  ]
+},
   ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
